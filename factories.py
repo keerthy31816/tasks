@@ -1,9 +1,7 @@
 from faker import Faker
 from your_project.models import Product
-
 fake = Faker()
-
-def create_fake_product():
+def fake_product():
     product_name = fake.unique.first_name()
     description = fake.text()
     price = fake.random_number(decimals=2, min_value=10, max_value=1000) 
